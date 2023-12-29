@@ -15,6 +15,12 @@ public class Account {
 		this.setProduct(product);
 	}
 
+	@Override
+	public String toString() {
+		return "Account [accountNo=" + accountNo + ", accountType=" + accountType + ", balance=" + balance
+				+ ", product=" + product + "]";
+	}
+
 	public String getAccountNo() {
 		return accountNo;
 	}

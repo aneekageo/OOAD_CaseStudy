@@ -16,7 +16,6 @@ public class AccountService {
 		do {
 		System.out.println("Enter Account Number:");
 		String accNumber = scanner.nextLine();
-		scanner.nextLine();
 		System.out.println("Enter Account Type:");
 		String accType = scanner.nextLine();
 		int i = 0;
@@ -97,6 +96,9 @@ public class AccountService {
 			case 2:
 				balance = (depositAmount - (0.003 * depositAmount) + account.getbalance());
 				account.setbalance(balance);
+			default:
+				System.out.println("Wrong Choice");
+				break;
 			}
 			System.out.println("Your current account balance:Rs." + account.getbalance());
 		} else {

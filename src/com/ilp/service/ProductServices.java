@@ -68,6 +68,9 @@ public class ProductServices {
 				service = new Services("Cheque Deposit", servCode, servRate);
 				serviceList.add(service);
 				break;
+			default:
+				System.out.println("Wrong Choice");
+				break;
 			}
 			System.out.println("Do you want to add more services?(Yes=1, No= 0)");
 			loopChoice = scanner.nextInt();
@@ -115,6 +118,9 @@ public class ProductServices {
 					LoanAccount laproduct = new LoanAccount(productCode, "Loan Account", newServiceList, chequeDeposit);
 					productList.add(laproduct);
 					break;
+				default:
+					System.out.println("Wrong Choice");
+					break;
 				}
 
 				System.out.println("Do you want to add more products?(Yes=1, No= 0)");
@@ -136,7 +142,7 @@ public class ProductServices {
 			i++;
 			System.out.println(i + "." + service.getServiceName());
 		}
-		
+
 		int loopChoice;
 		do {
 			System.out.println("Enter the service to add:");

@@ -39,6 +39,8 @@ public class CustomerAccountUtility {
 			break;
 			case 6:System.out.println("Exited Successfully");
 				break;
+			default:System.out.println("Wrong Choice");
+				break;
 			}
 			System.out.println("Do you want to return to main menu (yes=1,no = 0)");
 			loopChoice = scanner.nextInt();
